@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+*:not(.fa) { font-family: 'Inter', sans-serif !important; }
+/* cursor from my old 2015 MAL style */
+* { cursor: url(http://i1254.photobucket.com/albums/hh603/cdkz/cur67-1.gif) 1 2, auto !important; }
+
+:root {
+ --bg-body: #16161E;
+ --bg-inner: #1A1B26;
+ --bg-scnd: #414868;
+ --bg-inner-hover: hsl(235, 20%, 16%);
+
+ --accent: #73daca; 
+ --accent-two: #78BE54;
+ --accent-three: #bb9af7;
+
+ --border: #101014;
+ --text: #9aa5ce;
+}
+
+body { background-color: var(--bg-body) !important; }
+body, .list-table .list-table-header .header-title .link { color: var(--text) !important; }
+
+.list-container, #status-menu { background: var(--bg-inner) !important; }
+.list-table-header, .list-table .list-table-header .header-title { background: var(--bg-body) !important; }
+
+.list-block { margin-top: 0 !important; }
+.list-unit, .list-status-title { width: 100% !important; }
+
+/* ALL ANIME and stats bar */
+#search-button, .status-button { color: var(--accent-three) !important; opacity: .5; transition: .45s color ease-in-out, .45s opacity ease-in-out; }
+#search-button:hover, .status-button:hover { opacity: 1; }
+
+.status-button { text-transform: uppercase; font-size: 1.5em !important; }
+.status-button.on { opacity: 1; }
+.status-button::after { background-color: var(--accent-three) !important; }
+.list-status-title { background-color: var(--bg-scnd) !important; }
+#show-stats-button, #advanced-options-button { color: var(--bg-body) !important; }
+
+
+/* links */
+.list-table .list-table-header .header-title .link.sort, 
+.list-table .list-table-data .tags .edit { color: var(--accent-two) !important; }
+
+.list-table .list-table-data .data a { color: var(--accent) !important; }
+.list-table .list-table-data .data.title .link { font-size: 1.3em !important;  }
+
+/* borders */
+.status-menu-container, .list-container,
+.list-table .list-table-header .header-title { border-color: var(--border) !important; }
+
+/* hover states */
+.list-table-data { opacity: .6; transition: .45s background-color ease-in-out, .45s opacity ease-in-out; }
+.list-table-data:hover { background-color: var(--bg-inner-hover); opacity: 1; }
+.list-table .list-table-data .data.title .add-edit-more { float: none !important; margin-top: 5px; }
+
+.image.hover-info { 
+  border-radius: 4px; 
+  transition: .45s opacity ease-in-out; 
+  width: 80px !important; height: 120px !important; 
+}
+
+/* left menu */
+.list-menu-float .icon-menu, a.link-list-setting, a.link-style-setting { background-color: var(--bg-inner) !important; }
+.list-menu-float .icon-menu svg.icon { fill: var(--accent-three) !important; }
+.list-menu-float .icon-menu:first-child { border-top-right-radius: 8px; }
+.list-menu-float .icon-menu:last-child { border-bottom-right-radius: 8px; }
+
+
+/* disables */
+.list-menu-float, .image.hover-info, .list-table .list-table-data .data { border: none !important; }
+.header { visibility: hidden !important; height: 40px !important;}
+.list-menu-float form, .status-button.on::after, footer, .list-status-title .text, .icon-watch.ml4.ga-click { display: none !important; }
+
+/* 
+  by Jencansee
+  https://github.com/Jencansee 
+  17/10/21
+*/
